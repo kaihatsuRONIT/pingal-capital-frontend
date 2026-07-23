@@ -104,7 +104,7 @@ export default function AboutSection() {
 
             {/* Learn More Button */}
             <button
-              className="font-inter flex items-center gap-2 px-6 py-3 rounded-full text-white text-sm font-semibold transition-opacity hover:opacity-90"
+              className="font-inter flex items-center gap-2 px-6 py-3 rounded-full text-white text-sm font-semibold transition-opacity hover:opacity-90 cursor-pointer"
               onClick={()=> router.push("/about")}
               style={{
                 background: "linear-gradient(135deg, #0B2E6F 0%, #0D3B8F 100%)",

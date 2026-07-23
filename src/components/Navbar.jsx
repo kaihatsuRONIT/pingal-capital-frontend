@@ -93,7 +93,7 @@ export default function Navbar() {
                 {/* Contact Button — Desktop */}
                 <button
                     onClick={() => router.push("/contact")}
-                    className="hidden lg:block text-sm font-semibold text-white px-7 py-4 rounded-full transition-opacity hover:opacity-90 whitespace-nowrap"
+                    className="hidden lg:block text-sm font-semibold text-white px-7 py-4 rounded-full transition-opacity hover:opacity-90 whitespace-nowrap cursor-pointer"
                     style={{ background: "#0D3785" }}
                 >
                     Contact Us
