@@ -127,7 +127,7 @@ export default function ServicesSection() {
                   background: "linear-gradient(135deg, #FFFFFF 0%, #F9FAFB 100%)",
                   boxShadow: "0px 4px 6px -4px #0000001A, 0px 10px 15px -3px #0000001A",
                   transition: "transform 0.25s ease, box-shadow 0.25s ease",
-                  cursor: "default",
+                  cursor: "pointer",
                 }}
                 onMouseEnter={e => {
                   e.currentTarget.style.transform = "translateY(-6px)";

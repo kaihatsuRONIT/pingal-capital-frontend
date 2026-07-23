@@ -1,5 +1,6 @@
 import { Sparkles, ArrowRight } from "lucide-react";
 import AnimateOnScroll from "../AnimateOnScroll";
+import { useRouter } from "next/navigation";
 
 const stats = [
     { value: "24/7", label: "Support Available" },
@@ -8,6 +9,7 @@ const stats = [
 ];
 
 export default function CTASection() {
+    const router = useRouter();
     return (
         <section
             className="relative overflow-hidden py-20 px-6"
@@ -83,7 +85,8 @@ export default function CTASection() {
                 {/* Buttons */}
                 <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
                     <button
-                        className="font-inter flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-opacity hover:opacity-90"
+                        className="font-inter flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-opacity hover:opacity-90 cursor-pointer"
+                        onClick={()=> router.push("/contact")}
                         style={{
                             background: "linear-gradient(135deg, #D4A437 0%, #E6C76A 100%)",
                             color: "#0B2E6F",
@@ -95,7 +98,8 @@ export default function CTASection() {
                         <ArrowRight size={16} />
                     </button>
                     <button
-                        className="font-inter px-6 py-3 rounded-full font-semibold border-2 text-white transition-colors hover:bg-white hover:text-[#0B2E6F]"
+                        className="font-inter px-6 py-3 rounded-full font-semibold border-2 text-white transition-colors hover:bg-white hover:text-[#0B2E6F] cursor-pointer"
+                        onClick={()=> router.push("/contact")}
                         style={{
                             borderColor: "rgba(255,255,255,0.6)",
                             fontSize: "15px",

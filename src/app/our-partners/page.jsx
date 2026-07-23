@@ -22,6 +22,8 @@ const financialPartners = [
     { name: "Shapoorji Pallonji", url: '/partners/financial/Shapoorji-Pallonji.webp' }, // existing
     { name: "MAX Estates", url: '/partners/financial/MAX-Estates.jpeg' },
     { name: "Oberoi Realty", url: '/partners/financial/Oberoi-Realty.jpeg' },
+    { name: "Purvanchal", url: '/partners/financial/purvanchal.webp' },
+    { name: "Bestech Group", url: '/partners/financial/bestech.webp' },
 ];
 
 // BANKING PARTNERS (Top Banks & NBFCs)
@@ -41,6 +43,7 @@ const bankingPartners = [
     { name: "Godrej Capital", url: '/partners/banking/Godrej-Capital.jpeg' },
     { name: "PNB Housing Finance", url: '/partners/banking/PNB-Housing-Finance.jpeg' },
     { name: "L&T Finance", url: '/partners/banking/LT-Finance.jpeg' },
+    { name: "IDFC First Bank", url: '/partners/banking/idfc-first-bank.webp' },
 ];
 
 export default function OurFinancialPartners() {

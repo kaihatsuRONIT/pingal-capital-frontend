@@ -33,9 +33,9 @@ const footerLinks = [
 ];
 
 const socialIcons = [
-  { icon: <FaFacebook size={18} />, label: "Facebook", link: "https://www.facebook.com/share/1EP5HSrG6L/?mibextid=wwXIfr" },
+  { icon: <FaFacebook size={18} />, label: "Facebook", link: "https://www.facebook.com/pingalcapital" },
   { icon: <FaYoutube  size={18} />, label: "Twitter", link: "https://www.youtube.com/channel/UCv9kbIQ_hOMC_brMuFVwo6A" },
-  { icon: <FaLinkedin size={18} />, label: "LinkedIn", link: "https://www.linkedin.com/in/pingalcapital" },
+  { icon: <FaLinkedin size={18} />, label: "LinkedIn", link: "https://www.linkedin.com/in/ajay-sahore-a205b780/" },
   { icon: <FaInstagram size={18} />, label: "Instagram", link: "https://www.instagram.com/pingal_capital" },
 ];
 

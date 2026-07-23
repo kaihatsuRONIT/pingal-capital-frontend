@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import AnimateOnScroll from "../AnimateOnScroll";
+import { useRouter } from "next/navigation";
 
 const features = [
   "Strategic Capital Partnerships",
@@ -10,6 +11,7 @@ const features = [
 ];
 
 export default function AboutSection() {
+  const router = useRouter();
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
@@ -103,6 +105,7 @@ export default function AboutSection() {
             {/* Learn More Button */}
             <button
               className="font-inter flex items-center gap-2 px-6 py-3 rounded-full text-white text-sm font-semibold transition-opacity hover:opacity-90"
+              onClick={()=> router.push("/about")}
               style={{
                 background: "linear-gradient(135deg, #0B2E6F 0%, #0D3B8F 100%)",
                 fontSize: "15px",

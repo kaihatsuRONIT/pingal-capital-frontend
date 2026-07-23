@@ -383,7 +383,7 @@ export default function EMICalculator() {
 
                 <AnimateOnScroll direction="up" delay={0.1}>
                   <button
-                    className="font-inter w-full py-3 rounded-xl font-semibold transition-opacity hover:opacity-90"
+                    className="font-inter w-full py-3 rounded-xl font-semibold transition-opacity hover:opacity-90 cursor-pointer"
                     style={{ background: "#fff", color: "#0B2E6F", fontSize: "14px", fontWeight: 600 }}
                     onClick={()=> router.push("/contact")}
                   >

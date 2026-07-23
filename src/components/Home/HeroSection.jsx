@@ -118,6 +118,7 @@ export default function HeroSection() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
+                  onClick={() => router.push("/services/home-loan")}
                   className="hero-btn-primary rounded-full font-semibold transition-opacity hover:opacity-90 font-inter"
                   style={{ background: "linear-gradient(135deg, #D4A437 46.15%, #E6C76A 100%)", color: "#0B2E6F", cursor: "pointer", fontWeight: 700 }}
                 >
