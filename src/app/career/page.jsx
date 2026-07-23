@@ -142,8 +142,8 @@ export default function Careers() {
                             </p>
                             <div className="flex flex-col gap-4">
                                 {[
-                                    { label: "Email", value: "careers@yourcompany.com" },
-                                    { label: "Phone", value: "+91 98765 43210" },
+                                    { label: "Email", value: "info@pingalcapital.com" },
+                                    { label: "Phone", value: "+91 99996 93669" },
                                     { label: "Office", value: "Noida, Uttar Pradesh" },
                                 ].map((item) => (
                                     <div key={item.label} className="flex gap-3 items-center">
