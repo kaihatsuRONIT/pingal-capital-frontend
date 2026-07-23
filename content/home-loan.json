@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "backgroundImage": "/home-loan-bg.jpg",
+    "badge": "Home Financing",
+    "heading": "Turn Your Dream Home Into Reality with Pingal Capital",
+    "subtext": "Affordable Home Loans Tailored to Your Needs",
+    "highlightedBrand": "Pingal Capital",
+    "form": {
+      "title": "Apply for Home Loan",
+      "subtitle": "A dedicated advisor will contact you within one business hour.",
+      "fields": {
+        "fullName": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+        },
+        "companyName": {
+          "label": "Company Name",
+          "placeholder": "Enter your company name"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "+91 98765 43210"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your@email.com"
+        },
+        "fundingRequirement": {
+          "label": "Loan Amount Required",
+          "placeholder": "e.g., ₹50 Lakhs - ₹1 Crore"
+        },
+        "businessNeeds": {
+          "label": "Tell us about your property needs",
+          "placeholder": "Briefly describe the property and your home loan requirements..."
+        }
+      },
+      "submitButton": "Submit Request"
+    }
+  },
+  "info": {
+    "image": "/home-loan-info-1.jpg",
+    "stat": {
+      "value": "10000+",
+      "label": "Families housed through our home loan programs."
+    },
+    "heading": "Making Homeownership Simple & Affordable",
+    "paragraph": "At Pingal Capital, we offer home loans designed to make your dream of owning a home a reality. With competitive interest rates, flexible repayment tenures, and minimal documentation, we ensure the journey to your new home is smooth and stress-free.",
+    "features": [
+      {
+        "icon": "Shield",
+        "title": "Zero Hidden Charges",
+        "description": "Complete transparency in processing fees, interest rates and repayment terms with no surprises."
+      },
+      {
+        "icon": "Clock",
+        "title": "Quick Disbursement",
+        "description": "Fast-track loan approval and disbursement directly to your account within 7-10 working days."
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "What is the minimum CIBIL score required for loan approval?",
+        "answer": "Most lenders consider applications with a CIBIL score of 700 or above. However, the best interest rates are offered to applicants with 800+ CIBIL, subject to profile and lender policies."
+      },
+      {
+        "question": "What is the maximum loan amount I can avail?",
+        "answer": "Loan amounts typically range from ₹10 lakhs to ₹10 crores, depending on the property value, your repayment capacity, and lender terms."
+      },
+      {
+        "question": "Do you charge any extra fees for loan processing?",
+        "answer": "No. Pingal Capital does not charge any additional service or consultancy fees. You only pay the standard processing fees charged by the bank or NBFC."
+      },
+      {
+        "question": "Can you help me get a better interest rate than my bank offers directly?",
+        "answer": "Yes. We compare multiple banks and NBFCs to hunt the best ROI based on your profile, credit score, and requirement—often securing better terms than direct bank visits."
+      },
+      {
+        "question": "Can I transfer my existing home loan to a lower interest rate?",
+        "answer": "Yes. We assist with home loan balance transfers, helping reduce EMIs and overall interest costs."
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "badge": "Mortgage Solutions",
+    "heading": "Secure Your Future with Pingal Capital Mortgage Strategies",
+    "tagline": "Pingal Capital — Your Trusted Partner for Mortgage & Property Financing",
+    "backgroundImage": "/mortgage_hero.jpg",
+    "form": {
+      "title": "Apply for Mortgage Loan",
+      "subtitle": "A dedicated advisor will contact you within one business hour.",
+      "submitButton": "Submit Request"
+    }
+  },
+  "info": {
+    "image": "/mortgage_home.jpg",
+    "stat": {
+      "value": "98%",
+      "label": "Client satisfaction rate across our mortgage portfolio."
+    },
+    "heading": "Making Mortgage Simple & Stress-Free",
+    "paragraph": "At Pingal Capital, we specialize in providing mortgage solutions tailored to your financial profile. Whether you're purchasing your first property, refinancing an existing mortgage, or unlocking equity from your home — our expert advisors guide you through every step with clarity and speed.",
+    "features": [
+      {
+        "icon": "Award",
+        "title": "Dedicated Concierge Service",
+        "description": "Your single point of contact for every stage of the mortgage acquisition process."
+      },
+      {
+        "icon": "CreditCard",
+        "title": "Flexible Capital Structures",
+        "description": "Customized repayment terms and zero prepayment penalties across all mortgage tiers."
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "What is a Loan Against Property?",
+        "answer": "A Loan Against Property is a secured loan where you can avail funds by pledging your property as collateral. The loan amount depends on your property's market value and repayment capacity."
+      },
+      {
+        "question": "Can I use the funds for personal purposes?",
+        "answer": "Yes — funds from a LAP can be used for a wide range of personal and business needs such as education, medical expenses, debt consolidation, or business investment."
+      },
+      {
+        "question": "Is the interest rate lower than a personal loan?",
+        "answer": "Yes — since LAP is a secured loan backed by property, interest rates are generally lower than unsecured loans like personal loans."
+      },
+      {
+        "question": "How long is the repayment tenure?",
+        "answer": "Most lenders offer flexible repayment tenures, typically up to 15 years or more, based on lender policies and eligibility."
+      },
+      {
+        "question": "What documents do I need to apply?",
+        "answer": "You need identity & address proof, income documents, bank statements, and property papers. Additional documents may be required based on lender and applicant profile."
+      }
+    ]
+  }
+}

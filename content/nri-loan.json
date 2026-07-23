@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "badge": "NRI Financing",
+    "heading": "Tailored Finance for Non-Resident Indians",
+    "subtext": "Specialized loan services designed to meet the distinct needs of NRIs — making it easy to access funds for property, assets, or family goals in India.",
+    "tagline": "Your Trusted NRI Financial Partner",
+    "backgroundImage": "/nri-loan-bg.avif",
+    "form": {
+      "title": "Apply for NRI Loan",
+      "subtitle": "A dedicated advisor will contact you within one business hour.",
+      "submitButton": "Submit Request"
+    }
+  },
+  "info": {
+    "image": "/topup-loan-right.avif",
+    "badge": "Non-Residential Premises Loan",
+    "heading": "What Are NRI Loan Services?",
+    "paragraph": "NRI loan services are financing solutions specifically structured for NRIs and Persons of Indian Origin (PIO) living abroad. These include NRI Home Loans for buying or renovating residential property, Loan Against Property (LAP) using owned assets as security, and top-up loans and balance transfer options on existing loans — helping NRIs unlock capital in India and achieve personal or investment objectives even while residing overseas.",
+    "loansHeading": "Types of Loans Available for NRIs",
+    "loanTypes": [
+      {
+        "icon":"Home",
+        "title": "NRI Home Loan",
+        "description": "Finance the purchase, construction, or renovation of residential property in India with competitive rates tailored for NRIs."
+      },
+      {
+        "icon":"Building2",
+        "title": "Loan Against Property",
+        "description": "Leverage your existing Indian property as collateral to unlock funds for personal or investment needs while living abroad."
+      },
+      {
+        "icon":"RefreshCw",
+        "title": "Balance Transfer",
+        "description": "Transfer your existing NRI loan to a lender offering better rates, reducing your EMI burden significantly."
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "Can NRIs get a home loan in india?",
+        "answer": "Yes — NRIs and PIOs can apply for home loans in India for property purchase, construction, or renovation. Online applications and documentation with POA make the process convenient."
+      },
+      {
+        "question": "Is a co-applicant required?",
+        "answer": "Some banks require a local co-applicant or a Power of Attorney (POA) holder in India for loan processing and documentation."
+      },
+      {
+        "question": "Can NRIs avail loans against property they already own?",
+        "answer": "Yes — NRIs can take a loan against their residential or commercial property in India as collateral to access funds."
+      },
+      {
+        "question": "How must loan EMIs be paid?",
+        "answer": "EMIs must generally be paid from NRE, NRO, or FCNR(B) accounts depending on lender guidelines."
+      },
+      {
+        "question": "Are NRI loans eligible for tax benefits?",
+        "answer": "NRIs may be eligible for home loan tax benefits under Indian law if they file Indian income tax returns — including deductions on interest and principal paid."
+      }
+    ]
+  }
+}

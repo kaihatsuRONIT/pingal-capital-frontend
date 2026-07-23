@@ -1,0 +1,53 @@
+{
+    "hero": {
+        "badge": "Rental Income Finance",
+        "heading": "Unlock Funds Against Your Rental Income",
+        "tagline": "Leverage Your Rental Property. Access Capital. Grow Faster.",
+        "backgroundImage": "/loan-against-rentals-bg.avif",
+        "form": {
+            "title": "Apply for Loan Against Rentals",
+            "subtitle": "A dedicated advisor will contact you within one business hour.",
+            "submitButton": "Submit Request"
+        }
+    },
+    "info": {
+        "image": "/balance-transfer-left.avif",
+        "badge": "Balance Transfer",
+        "heading": "What Is a Loan Against Rentals (Lease Rental Discounting – LRD)?",
+        "paragraph": "A Loan Against Rentals (LRD) is a secured loan facility where you borrow against the present value of future rental receipts from your commercial property that's on lease. The loan amount is determined based on your lease agreement, rental income consistency, and property value.",
+        "eligibility": {
+            "heading": "Who Is Eligible?",
+            "subtext": "While criteria vary by lender, typical eligibility includes:",
+            "items": [
+                { "value": "Property must be leased with a valid registered lease agreement" },
+                { "value": "Rental income should be consistent and documented" },
+                { "value": "Applicant should meet age, credit score, and income norms" },
+                { "value": "Commercial or industrial property leased to reputed tenants" }
+            ]
+        }
+    },
+    "faq": {
+        "items": [
+  {
+    "question": "What is an LRD loan?",
+    "answer": "Lease Rental Discounting (LRD) is a loan against future rental income from a commercial property — allowing you to receive funds upfront."
+  },
+  {
+    "question": "Can I use the funds for any purpose?",
+    "answer": "Yes — LRD funds can typically be used for business expansion, refinancing existing debt, working capital, or personal goals, subject to lender terms."
+  },
+  {
+    "question": "Is residential property rental eligible?",
+    "answer": "Generally, LRD is designed for commercial properties leased to corporate or reputed tenants. Residential rentals usually do not qualify for LRD."
+  },
+  {
+    "question": "How is the loan amount calculated?",
+    "answer": "The loan is usually based on the discounted value of future rentals (Net Present Value) and property value, along with your creditworthiness."
+  },
+  {
+    "question": "What is the typical loan tenure?",
+    "answer": "Loan tenure often matches or is aligned with your lease period — typically up to 10–15 years."
+  }
+]
+    }
+}

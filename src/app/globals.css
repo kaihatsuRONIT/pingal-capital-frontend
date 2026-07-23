@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-playfair: var(--font-playfair);
+  --font-inter: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +25,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.elfsight-app-57da3b24-033c-41b3-938c-2e89e40a03f1,
+.elfsight-app-57da3b24-033c-41b3-938c-2e89e40a03f1 iframe {
+  width: 100% !important;
+  max-width: 100% !important;
 }

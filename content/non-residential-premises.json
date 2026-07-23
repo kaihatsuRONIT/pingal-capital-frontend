@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "badge": "Commercial Property Finance",
+    "heading": "Non-Residential Premises Loans for Your Business Growth",
+    "tagline": "Pingal Capital — Finance Offices, Shops & Commercial Spaces with Ease.",
+    "backgroundImage": "/non-residential-bg.avif",
+    "form": {
+      "title": "Apply for Non-Residential Loan",
+      "subtitle": "A dedicated advisor will contact you within one business hour.",
+      "submitButton": "Submit Request"
+    }
+  },
+  "info": {
+    "image": "/topup-loan-right.avif",
+    "badge": "Non-Residential Premises Loan",
+    "heading": "What Is a Non-Residential Premises Loan?",
+    "paragraph": "A Non-Residential Premises Loan (also called a Commercial Property Loan) is a dedicated financing solution for purchasing, constructing, expanding, or renovating business and commercial properties such as offices, shops, showrooms, clinics, warehouses, or other non-residential premises. It gives entrepreneurs and business owners the capital they need to grow their operations without burdening working capital.",
+    "eligibility": {
+      "heading": "Who Is Eligible?",
+      "subtext": "Non-Residential Premises Loans are typically available for:",
+      "items": [
+        {
+          "value": "Established business owners"
+        },
+        {
+          "value": "Self-employed professionals"
+        },
+        {
+          "value": "Entrepreneurs expanding operations"
+        },
+        {
+          "value": "Investors purchasing commercial premises"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "What types of non-residential properties are eligible for a loan?",
+        "answer": "We finance offices, retail shops, warehouses, industrial units, and mixed-use commercial properties. The property must be legally registered and free from disputes."
+      },
+      {
+        "question": "What is the maximum loan amount I can avail?",
+        "answer": "Loan amounts typically range from ₹10 lakhs to ₹10 crores, depending on the property value, your repayment capacity, and lender terms."
+      },
+      {
+        "question": "What is the usual tenure for a non-residential premises loan?",
+        "answer": "Tenures generally range from 5 to 15 years, giving you flexibility to manage EMIs as per your business cash flow."
+      },
+      {
+        "question": "Can I get a loan for a property I plan to rent out commercially?",
+        "answer": "Yes, rental-income-generating commercial properties are eligible. Lenders often factor in projected rental income while assessing your repayment capacity."
+      },
+      {
+        "question": "How long does the approval process take?",
+        "answer": "Our advisors typically complete the initial assessment within one business day. Full loan approval, subject to documentation and verification, usually takes 7–15 working days."
+      }
+    ]
+  }
+}

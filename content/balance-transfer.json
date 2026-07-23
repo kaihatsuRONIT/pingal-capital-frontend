@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "badge": "Smart Refinancing",
+    "heading": "Balance Transfer & Top-Up Loans for Better Financial Terms",
+    "tagline": "Pingal Capital — Switch Smarter. Save More. Access Extra Funds.",
+    "backgroundImage": "/balance-transfer-bg.avif",
+    "form": {
+      "title": "Apply for Balance Transfer",
+      "subtitle": "A dedicated advisor will contact you within one business hour.",
+      "submitButton": "Submit Request"
+    }
+  },
+  "info": {
+    "balanceTransfer": {
+      "image": "/balance-transfer-left.avif",
+      "badge": "Balance Transfer",
+      "heading": "What Is a Balance Transfer?",
+      "paragraph": "A balance transfer means transferring the outstanding balance of your current loan (e.g., home, personal, LAP) from one lender to another. The new lender pays off the existing debt and you continue repayment with the new terms, often at a lower interest rate or with a revised tenure."
+    },
+    "topUp": {
+      "image": "/topup-loan-right.avif",
+      "badge": "Top-Up Loan",
+      "heading": "What Is a Top-Up Loan?",
+      "paragraph": "A Top-Up Loan is additional credit you can take alongside your balance transfer. It allows you to borrow more than your existing outstanding amount — useful for renovation, medical emergencies, education, weddings, or other goals — all in one financing structure."
+    },
+    "whoCanBenefit": {
+      "heading": "Who Can Benefit?",
+      "subtext": "Balance transfer & top-up loans are useful if:",
+      "items": [
+        {
+          "value": "Your current interest rate is higher than available market rates"
+        },
+        {
+          "value": "You want lower EMIs or reduced financial burden"
+        },
+        {
+          "value": "You need additional funds for personal or business needs"
+        },
+        {
+          "value": "You want better repayment flexibility"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "What is a loan balance transfer?",
+        "answer": "It's when you move your existing loan to a new lender offering better terms — such as a lower interest rate, longer tenure, or more flexible EMI options."
+      },
+      {
+        "question": "What does a top-up loan mean?",
+        "answer": "A top-up loan is additional funds you can take during a balance transfer — useful for expenses like renovation, education, medical emergencies or other needs."
+      },
+      {
+        "question": "Can a balance transfer help lower my EMIs?",
+        "answer": "Yes — transferring to a lender with a lower interest rate or extended tenure can reduce your monthly EMIs."
+      },
+      {
+        "question": "Is there a processing fee for balance transfer?",
+        "answer": "Most lenders may charge a nominal processing fee for balance transfer and top-up facilities; these vary by bank/NBFC and should be factored into your decision."
+      },
+      {
+        "question": "Can I consolidate multiple loans into one through balance transfer?",
+        "answer": "Yes — if you have multiple loans, balance transfer options can help consolidate them, simplifying repayment under one loan term."
+      }
+    ]
+  }
+}
