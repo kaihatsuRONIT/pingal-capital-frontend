@@ -101,10 +101,6 @@ export default function EMICalculator() {
 
   const frequencyConfig = {
     monthly: { label: 'Monthly', periodsPerYear: 12 },
-    weekly: { label: 'Weekly', periodsPerYear: 52 },
-    fortnightly: { label: 'Fortnightly', periodsPerYear: 26 },
-    quarterly: { label: 'Quarterly', periodsPerYear: 4 },
-    yearly: { label: 'Yearly', periodsPerYear: 1 },
   };
 
   const { emi, totalInterest, totalCommitment, schedule } = useMemo(() => {
@@ -244,14 +240,14 @@ export default function EMICalculator() {
                   type="range"
                   className="emi-slider"
                   min={5}
-                  max={40}
+                  max={30}
                   step={1}
                   value={duration}
                   onChange={(e) => setDuration(Number(e.target.value))}
                 />
                 <div className="flex justify-between font-inter mt-1" style={{ fontSize: "11px", color: "#434656" }}>
                   <span>5 yrs</span>
-                  <span>40 yrs</span>
+                  <span>30 yrs</span>
                 </div>
               </div>
 
@@ -262,12 +258,12 @@ export default function EMICalculator() {
                     Repayment Frequency
                   </span>
                   <div className="text-right">
-                    <div className="font-inter uppercase tracking-widest" style={{ fontSize: "10px", color: "#434656" }}>
+                    {/* <div className="font-inter uppercase tracking-widest" style={{ fontSize: "10px", color: "#434656" }}>
                       Selected
                     </div>
                     <div className="font-inter font-bold" style={{ fontSize: "24px", color: "#0B2E6F" }}>
                       {frequencyConfig[frequency].label}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="flex gap-2 flex-wrap mt-2">
