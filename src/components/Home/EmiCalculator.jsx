@@ -5,6 +5,7 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid,
   Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
+import { useRouter } from "next/navigation";
 
 const sliderStyle = `
   .emi-slider {
@@ -148,6 +149,7 @@ export default function EMICalculator() {
     if (value >= 1000) return `₹${(value / 1000).toFixed(0)}k`;
     return `₹${value}`;
   };
+  const router = useRouter()
   return (
     <section id="emi-calculator" className="bg-white pb-20 px-6">
       <style>{sliderStyle}</style>
@@ -383,6 +385,7 @@ export default function EMICalculator() {
                   <button
                     className="font-inter w-full py-3 rounded-xl font-semibold transition-opacity hover:opacity-90"
                     style={{ background: "#fff", color: "#0B2E6F", fontSize: "14px", fontWeight: 600 }}
+                    onClick={()=> router.push("/contact")}
                   >
                     Apply for Pre-Approval
                   </button>

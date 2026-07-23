@@ -58,14 +58,14 @@ export default function ContactPage() {
                     <Navbar />
                 </AnimateOnScroll>
             </div>
-                {/* Hero */}
-                <section className="bg-[#0B2E6F] pt-20 pb-28 px-6 relative overflow-hidden" style={{ background: "linear-gradient(to bottom right, #0B2E6F 50%, #D4A437 100%)" }}>
-                    <div className="absolute -top-16 -right-16 w-72 h-72 rounded-full border border-white/10" />
-                    <div className="absolute -top-8 -right-8 w-48 h-48 rounded-full border border-white/10" />
-                    <div className="absolute bottom-0 left-0 w-96 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+            {/* Hero */}
+            <section className="bg-[#0B2E6F] pt-20 pb-28 px-6 relative overflow-hidden" style={{ background: "linear-gradient(to bottom right, #0B2E6F 50%, #D4A437 100%)" }}>
+                <div className="absolute -top-16 -right-16 w-72 h-72 rounded-full border border-white/10" />
+                <div className="absolute -top-8 -right-8 w-48 h-48 rounded-full border border-white/10" />
+                <div className="absolute bottom-0 left-0 w-96 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-                    <div className="max-w-6xl mx-auto">
-                        <AnimateOnScroll direction="right" delay={0.1}>
+                <div className="max-w-6xl mx-auto">
+                    <AnimateOnScroll direction="right" delay={0.1}>
                         <span
                             className="text-[#D4A437] text-xs font-semibold tracking-widest uppercase mb-4 block"
                             style={{ fontFamily: "Work Sans, sans-serif" }}
@@ -90,14 +90,14 @@ export default function ContactPage() {
                         >
                             Have a question about funding, partnerships, or our services? Reach out and our team will get back to you promptly.
                         </p>
-                        </AnimateOnScroll>
-                    </div>
-                </section>
-            
-                {/* Main */}
-                <section className="bg-white py-20 px-6">
-                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-<AnimateOnScroll direction="right" delay={0.1}>
+                    </AnimateOnScroll>
+                </div>
+            </section>
+
+            {/* Main */}
+            <section className="bg-white py-20 px-6">
+                <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+                    <AnimateOnScroll direction="right" delay={0.1}>
                         {/* Left — Info */}
                         <div>
                             <div className="flex items-center gap-3 mb-2">
@@ -145,7 +145,7 @@ export default function ContactPage() {
                                             </p>
                                             <p
                                                 className="text-sm font-semibold text-[#0B2E6F]"
-                                                style={{ fontFamily: "Manrope, sans-serif", maxWidth:"220px" }}
+                                                style={{ fontFamily: "Manrope, sans-serif", maxWidth: "220px" }}
                                             >
                                                 {value}
                                             </p>
@@ -154,8 +154,8 @@ export default function ContactPage() {
                                 ))}
                             </div>
                         </div>
-</AnimateOnScroll>
-<AnimateOnScroll direction="left" delay={0.1}>
+                    </AnimateOnScroll>
+                    <AnimateOnScroll direction="left" delay={0.1}>
                         {/* Right — Form */}
                         <div className="bg-[#f7f8fc] rounded-3xl p-8">
                             {submitted ? (
@@ -242,7 +242,17 @@ export default function ContactPage() {
                                             <option value="Funding Enquiry">Funding Enquiry</option>
                                             <option value="Partnership">Partnership</option>
                                             <option value="Home Loan">Home Loan</option>
+                                            <option value="Loan Services for NRIs">Loan Services for NRIs</option>
+                                            <option value="Loan Against Property">Loan Against Property</option>
+                                            <option value="Balance Transfer & Top Up">Balance Transfer & Top Up</option>
+                                            <option value="Non Residential Premises Loan">Non Residential Premises Loan</option>
+                                            <option value="Loan Against Rentals">Loan Against Rentals</option>
+                                            <option value="Debt Consolidation">Debt Consolidation</option>
+                                            <option value="Overdraft Facility">Overdraft Facility</option>
+                                            <option value="Working Capital">Working Capital</option>
                                             <option value="Business Loan">Business Loan</option>
+                                            <option value="Personal Loan">Personal Loan</option>
+                                            <option value="CGTMSE">CGTMSE</option>
                                             <option value="Other">Other</option>
                                         </select>
                                     </div>
@@ -275,10 +285,10 @@ export default function ContactPage() {
                                     </button>
                                 </form>
                             )}
-                        </div>       
-</AnimateOnScroll>
-                    </div>
-                </section>
+                        </div>
+                    </AnimateOnScroll>
+                </div>
+            </section>
             <Footer />
         </>
     );

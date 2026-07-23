@@ -29,7 +29,7 @@ export default function Navbar() {
     return (
         <div className="relative z-20 w-full px-4 sm:px-8 lg:px-16 pt-6 sm:pt-10">
             <nav
-                className="flex items-center justify-between px-4 sm:px-6 py-3 rounded-full w-full mx-auto"
+                className="flex items-center justify-between px-4 sm:px-6 py-10 rounded-full w-full mx-auto"
                 style={{
                     background: "rgba(255,255,255,0.97)",
                     maxWidth: "1144px",
@@ -40,8 +40,8 @@ export default function Navbar() {
             >
                 {/* Logo */}
                 <Link href="/">
-                    <div style={{ width: "130px", height: "50px" }} className="flex items-center">
-                        <img src="/websiteLogo.png" width={130} height={50} alt="Pingal Capital" style={{ objectFit: "contain" }} />
+                    <div style={{ width: "200px", height: "100px" }} className="flex items-center">
+                        <img src="/websiteLogo.png" width={200} height={100} alt="Pingal Capital" style={{ objectFit: "contain" }} />
                     </div>
                 </Link>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
 
                         {servicesOpen && (
                             <div
-                                className="absolute top-full left-0 mt-2 py-2 rounded-xl z-50 min-w-[220px] max-h-[70vh] overflow-y-auto"
+                                className="absolute top-full left-0 py-2 rounded-xl z-50 min-w-[220px] max-h-[70vh] overflow-y-auto"
                                 style={{ background: "#fff", boxShadow: "0px 10px 25px rgba(0,0,0,0.12)" }}
                             >
                                 {servicesMenu.map((cat, i) => (
@@ -93,7 +93,7 @@ export default function Navbar() {
                 {/* Contact Button — Desktop */}
                 <button
                     onClick={() => router.push("/contact")}
-                    className="hidden lg:block text-sm font-semibold text-white px-5 py-2.5 rounded-full transition-opacity hover:opacity-90 whitespace-nowrap"
+                    className="hidden lg:block text-sm font-semibold text-white px-7 py-4 rounded-full transition-opacity hover:opacity-90 whitespace-nowrap"
                     style={{ background: "#0D3785" }}
                 >
                     Contact Us

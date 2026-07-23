@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const footerLinks = [
@@ -33,10 +33,10 @@ const footerLinks = [
 ];
 
 const socialIcons = [
-  { icon: <FaFacebook size={18} />, label: "Facebook" },
-  { icon: <FaSquareXTwitter size={18} />, label: "Twitter" },
-  { icon: <FaLinkedin size={18} />, label: "LinkedIn" },
-  { icon: <FaInstagram size={18} />, label: "Instagram" },
+  { icon: <FaFacebook size={18} />, label: "Facebook", link: "https://www.facebook.com/share/1EP5HSrG6L/?mibextid=wwXIfr" },
+  { icon: <FaYoutube  size={18} />, label: "Twitter", link: "https://www.youtube.com/channel/UCv9kbIQ_hOMC_brMuFVwo6A" },
+  { icon: <FaLinkedin size={18} />, label: "LinkedIn", link: "https://www.linkedin.com/in/pingalcapital" },
+  { icon: <FaInstagram size={18} />, label: "Instagram", link: "https://www.instagram.com/pingal_capital" },
 ];
 
 export default function Footer() {
@@ -134,10 +134,11 @@ export default function Footer() {
               {socialIcons.map((social, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={`${social.link}`}
                   aria-label={social.label}
                   className="w-9 h-9 flex items-center justify-center rounded-lg border transition-colors hover:bg-white/10"
                   style={{ borderColor: "rgba(255,255,255,0.25)", color: "#fff" }}
+                  target="_new"
                 >
                   {social.icon}
                 </a>
