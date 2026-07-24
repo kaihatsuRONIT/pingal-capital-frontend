@@ -288,7 +288,7 @@ export default function Careers() {
                                         className="mt-2 bg-[#0B2E6F] text-white rounded-xl py-3 text-sm font-semibold hover:bg-[#0a2660] active:scale-95 transition-all duration-200"
                                         style={{ fontFamily: "Manrope, sans-serif" }}
                                     >
-                                        Submit Application
+                                        {loading ? "Submitting..." : "Submit Application"}
                                     </button>
                                 </form>
                             )}
