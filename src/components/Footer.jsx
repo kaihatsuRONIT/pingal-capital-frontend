@@ -34,7 +34,7 @@ const footerLinks = [
 
 const socialIcons = [
   { icon: <FaFacebook size={18} />, label: "Facebook", link: "https://www.facebook.com/pingalcapital" },
-  { icon: <FaYoutube  size={18} />, label: "Twitter", link: "https://www.youtube.com/channel/UCv9kbIQ_hOMC_brMuFVwo6A" },
+  { icon: <FaYoutube size={18} />, label: "Twitter", link: "https://www.youtube.com/channel/UCv9kbIQ_hOMC_brMuFVwo6A" },
   { icon: <FaLinkedin size={18} />, label: "LinkedIn", link: "https://www.linkedin.com/in/ajay-sahore-a205b780/" },
   { icon: <FaInstagram size={18} />, label: "Instagram", link: "https://www.instagram.com/pingal_capital" },
 ];
@@ -69,7 +69,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone size={15} style={{ color: "#0B2E6F", flexShrink: 0 }} />
-                <span className="font-inter text-sm" style={{ color: "#0B2E6F" }}>+91 9999693669</span>
+                <span className="font-inter text-sm" style={{ color: "#0B2E6F" }}>+91 9899037555</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={15} style={{ color: "#0B2E6F", flexShrink: 0 }} />
@@ -160,10 +160,14 @@ export default function Footer() {
 
           {/* Disclaimer */}
           <p
-            className="font-inter text-center text-blue-300 py-4 px-2"
+            className="font-inter text-center text-blue-300 pt-4 px-2"
             style={{ fontSize: "12px", lineHeight: "19.5px", fontWeight: 400 }}
           >
             Disclaimer: Pingal Capital is a financial services provider. All loans are subject to credit approval. Terms and conditions apply. Please read all scheme related documents carefully before availing services.
+          </p>
+          <p className="font-inter text-center text-blue-300 pb-1 px-2"
+            style={{ fontSize: "12px", lineHeight: "19.5px", fontWeight: 400 }}>
+            Designed and Developed by : <Link href="https://www.gstarinfotech.com/" target="_new" className="hover:text-blue-200">Gstar Infotech</Link>
           </p>
 
         </div>

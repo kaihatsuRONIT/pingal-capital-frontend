@@ -45,7 +45,7 @@ export default function ContactPage() {
     };
 
     const info = [
-        { icon: Phone, label: "Phone", value: "+91 9999693669" },
+        { icon: Phone, label: "Phone", value: "+91 9899037555" },
         { icon: Mail, label: "Email", value: "info@pingalcapital.com" },
         { icon: MapPin, label: "Office", value: "516 5th floor Wave Silver Tower Sector 18 Noida Gautam Buddha Nagar Uttar Pradesh 201301" },
         { icon: Clock, label: "Hours", value: "Mon – Sat, 9:00 AM – 6:00 PM" },

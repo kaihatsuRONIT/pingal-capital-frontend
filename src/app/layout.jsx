@@ -25,8 +25,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Pingal Capital",
-  description: "Your One-Stop Destination for Finance, Loans, Insurance &amp; Real Estate Services Pingal Capital is a trusted provider of financial and insurance solutions, serving individuals, families &amp; Corporates with a commitment to integrity, innovation, and long-term value. we have helped thousands of clients secure their financial future through tailored strategies and expert guidance.",
+  title: "Home Loans, Business Loans & Real Estate Project Funding | Pingal Capital",
+  description: "Pingal Capital specializes in Home Loans, loan against property, Working Capital, Debt consolidation Business Loans,Structured Finance, Builder & Construction Finance loans across India.",
 };
 const brandColors = {
   Facebook: "#1877F2",
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 py-3">
               <p className="font-inter text-blue-200" style={{ fontSize: "13px" }}>
-                📞 +91 9999693669 | info@pingalcapital.com
+                📞 +91 9899037555 | info@pingalcapital.com
               </p>
               <div className="flex items-center gap-3">
                 {[

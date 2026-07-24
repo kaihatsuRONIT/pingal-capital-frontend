@@ -26,7 +26,7 @@ export default function AboutSection() {
             }}
           >
             <Image
-              src="/founder.jpg"
+              src="/founder1.jpeg"
               alt="Pingal Capital Representative"
               width={420}
               height={500}

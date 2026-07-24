@@ -74,7 +74,7 @@ export default function FounderSection() {
             style={{ boxShadow: "0px 25px 50px -12px #00000040" }}
           >
             <Image
-              src="/founder.jpg"
+              src="/founder1.jpeg"
               alt="Ajay Sahore - Founder & CEO"
               width={420}
               height={480}
