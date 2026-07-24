@@ -17,9 +17,10 @@ export default function Careers() {
         phone: "",
         position: "",
         message: "",
-        resume: null,
     });
     const [submitted, setSubmitted] = useState(false);
+    const [loading,setLoading] = useState(false)
+    const [error,setError] = useState("")
 
     const handle = (e) => {
         const { name, value, files } = e.target;
@@ -31,18 +32,10 @@ export default function Careers() {
         setLoading(true);
         setError("");
         try {
-            const formData = new FormData();
-            formData.append("form_slug", "career");
-            formData.append("name", form.name);
-            formData.append("email", form.email);
-            formData.append("phone", form.phone);
-            formData.append("position", form.position);
-            formData.append("message", form.message);
-            if (form.resume) formData.append("resume", form.resume);
-
-            const res = await fetch("/api/submissions/career", {
+            const res = await fetch("/api/submissions", {
                 method: "POST",
-                body: formData,
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ form_slug: "career", data: { name: form.name, email: form.email, phone: form.phone, position: form.position, message: form.message } }),
             });
             if (res.ok) {
                 setSubmitted(true);
@@ -278,18 +271,6 @@ export default function Careers() {
                                             value={form.message}
                                             onChange={handle}
                                             className="bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-700 outline-none focus:border-[#0B2E6F] transition-colors resize-none"
-                                            style={{ fontFamily: "Work Sans, sans-serif" }}
-                                        />
-                                    </div>
-
-                                    <div className="flex flex-col gap-1.5">
-                                        <label className="text-xs font-semibold text-[#0B2E6F]" style={{ fontFamily: "Manrope, sans-serif" }}>Resume (PDF)</label>
-                                        <input
-                                            name="resume"
-                                            type="file"
-                                            accept=".pdf,.doc,.docx"
-                                            onChange={handle}
-                                            className="bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-500 outline-none focus:border-[#0B2E6F] transition-colors file:mr-3 file:text-xs file:font-semibold file:text-[#0B2E6F] file:bg-[#0B2E6F]/10 file:border-0 file:rounded-lg file:px-3 file:py-1 cursor-pointer"
                                             style={{ fontFamily: "Work Sans, sans-serif" }}
                                         />
                                     </div>

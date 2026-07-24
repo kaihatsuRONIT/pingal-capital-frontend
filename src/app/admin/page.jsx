@@ -37,6 +37,7 @@ export default function AdminPage() {
         { key: "submissions-cgtmse", label: "CGTMSE Form" },
         { key: "submissions-contact", label: "Contact Form" },
         { key: "submissions-join-us", label: "Join Us Form" },
+        { key: "submissions-career", label: "Career Form" },
     ];
 
     useEffect(() => {
