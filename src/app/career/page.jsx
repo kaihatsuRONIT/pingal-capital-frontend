@@ -26,9 +26,34 @@ export default function Careers() {
         setForm((prev) => ({ ...prev, [name]: files ? files[0] : value }));
     };
 
-    const submit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setLoading(true);
+        setError("");
+        try {
+            const formData = new FormData();
+            formData.append("form_slug", "career");
+            formData.append("name", form.name);
+            formData.append("email", form.email);
+            formData.append("phone", form.phone);
+            formData.append("position", form.position);
+            formData.append("message", form.message);
+            if (form.resume) formData.append("resume", form.resume);
+
+            const res = await fetch("/api/submissions/career", {
+                method: "POST",
+                body: formData,
+            });
+            if (res.ok) {
+                setSubmitted(true);
+                setForm({ name: "", email: "", phone: "", position: "", message: "", resume: null });
+            } else {
+                setError("Something went wrong. Please try again.");
+            }
+        } catch {
+            setError("Network error. Please try again.");
+        }
+        setLoading(false);
     };
 
     return (
@@ -184,7 +209,7 @@ export default function Careers() {
                                     </p>
                                 </div>
                             ) : (
-                                <form onSubmit={submit} className="flex flex-col gap-5">
+                                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                                     <div className="grid grid-cols-2 gap-4">
                                         <div className="flex flex-col gap-1.5">
                                             <label className="text-xs font-semibold text-[#0B2E6F]" style={{ fontFamily: "Manrope, sans-serif" }}>Full Name</label>

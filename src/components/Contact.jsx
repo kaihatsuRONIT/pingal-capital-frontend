@@ -283,6 +283,11 @@ export default function ContactPage() {
                                     >
                                         {loading ? "Sending..." : "Send Message"}
                                     </button>
+                                    {submitted && (
+                                        <p className="font-inter text-center text-green-600 text-xs">
+                                            ✓ Request submitted! We'll get back to you within 24 hours.
+                                        </p>
+                                    )}
                                 </form>
                             )}
                         </div>

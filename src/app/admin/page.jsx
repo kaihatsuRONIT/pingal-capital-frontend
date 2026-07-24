@@ -35,6 +35,8 @@ export default function AdminPage() {
         { key: "submissions-business-loan", label: "Business Loan Form" },
         { key: "submissions-personal-loan", label: "Personal Loan Form" },
         { key: "submissions-cgtmse", label: "CGTMSE Form" },
+        { key: "submissions-contact", label: "Contact Form" },
+        { key: "submissions-join-us", label: "Join Us Form" },
     ];
 
     useEffect(() => {

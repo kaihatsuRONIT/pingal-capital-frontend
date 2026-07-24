@@ -10,25 +10,43 @@ const openings = [
     { title: "Credit Analyst", dept: "Risk", location: "Remote" },
 ];
 
-export default function Careers() {
+export default function JoinUs() {
     const [form, setForm] = useState({
         name: "",
         email: "",
         phone: "",
         position: "",
         message: "",
-        resume: null,
     });
+    const [loading,setLoading] = useState(false)
     const [submitted, setSubmitted] = useState(false);
+    const [error, setError] = useState("")
 
     const handle = (e) => {
         const { name, value, files } = e.target;
         setForm((prev) => ({ ...prev, [name]: files ? files[0] : value }));
     };
 
-    const submit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setLoading(true);
+        setError("");
+        try {
+            const res = await fetch("/api/submissions", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ form_slug: "join-us", data: form }),
+            });
+            if (res.ok) {
+                setSubmitted(true);
+                setForm({ name: "", email: "", phone: "", position: "", message: "" });
+            } else {
+                setError("Something went wrong. Please try again.");
+            }
+        } catch {
+            setError("Network error. Please try again.");
+        }
+        setLoading(false);
     };
 
     return (
@@ -187,7 +205,7 @@ export default function Careers() {
                                     </p>
                                 </div>
                             ) : (
-                                <form onSubmit={submit} className="flex flex-col gap-5">
+                                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                                     <div>
                                         <h3
                                             className="text-[#0B2E6F] font-bold text-lg mb-1"
@@ -278,9 +296,12 @@ export default function Careers() {
                                         className="mt-2 bg-[#0B2E6F] text-white rounded-xl py-3 text-sm font-semibold hover:bg-[#0a2660] active:scale-95 transition-all duration-200"
                                         style={{ fontFamily: "Manrope, sans-serif" }}
                                     >
-                                        Register as Partner →
+                                        {loading ? "Submitting..." : "Register as Partner →"}
                                     </button>
                                 </form>
+                            )}
+                            {error && (
+                                <p className="font-inter text-center text-red-500 text-xs">{error}</p>
                             )}
                         </div>
                     </AnimateOnScroll>

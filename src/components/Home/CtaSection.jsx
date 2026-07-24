@@ -11,148 +11,168 @@ const stats = [
 export default function CTASection() {
     const router = useRouter();
     return (
-        <section
-            className="relative overflow-hidden py-20 px-6"
-            style={{ background: "linear-gradient(135deg, #0B2E6F 0%, #0D3B8F 50%, #1A4A9F 100%)" }}
-        >
-            {/* Subtle radial glow left */}
-            <div
-                className="absolute top-0 left-0 w-[40%] h-full pointer-events-none"
-                style={{
-                    background: "radial-gradient(ellipse at left center, rgba(255,255,255,0.06) 0%, transparent 70%)",
-                }}
-            />
-            {/* Blur near "Ready" - top left */}
-            <div
-                className="absolute pointer-events-none"
-                style={{
-                    width: "256.63px",
-                    height: "256.63px",
-                    top: "78.95px",
-                    left: "79.69px",
-                    background: "#E6C76A",
-                    filter: "blur(152.98px)",
-                    borderRadius: "16818472px",
-                    opacity: 0.55,
-                }}
-            />
-
-            {/* Blur right side above stats */}
-            <div
-                className="absolute pointer-events-none"
-                style={{
-                    width: "382.44px",
-                    height: "382.44px",
-                    top: "400px",
-                    left: "990px",
-                    background: "#E6C76A",
-                    filter: "blur(152.98px)",
-                    borderRadius: "20050934px",
-                    opacity: 0.55,
-                }}
-            />
-
-            <div className="relative z-10 max-w-[978px] text-center mx-auto">
-
-                {/* Sparkle Icon */}
+        <>
+            <style>{`
+    .hero-btn-primary { font-size: 18px; line-height: 28px; padding: 16px 36px; }
+    .hero-bstn-secondary { font-size: 18px; line-height: 28px; padding: 12px 24px; }
+    @media (max-width: 768px) {
+      .hero-btn-primary { font-size: 15px; line-height: 24px; padding: 12px 28px; }
+      .hero-btn-secondary { font-size: 15px; line-height: 24px; padding: 10px 20px; }
+    }
+    @media (max-width: 480px) {
+      .hero-btn-primary { font-size: 13px; line-height: 20px; padding: 10px 22px; }
+      .hero-btn-secondary { font-size: 13px; line-height: 20px; padding: 8px 16px; }
+    }
+      .hero-heading { font-size: 72px; line-height: 90px; }
+    @media (max-width: 768px) { .hero-heading { font-size: 48px; line-height: 62px; } }
+@media (max-width: 480px) { .hero-heading { font-size: 36px; line-height: 46px; } }
+.hero-para { font-size: 20px; line-height: 39px; }
+    @media (max-width: 768px) { .hero-para { font-size: 16px; line-height: 28px; } }
+    @media (max-width: 480px) { .hero-para { font-size: 14px; line-height: 24px; } }
+  `}</style>
+            <section
+                className="relative overflow-hidden py-20 px-6"
+                style={{ background: "linear-gradient(135deg, #0B2E6F 0%, #0D3B8F 50%, #1A4A9F 100%)" }}
+            >
+                {/* Subtle radial glow left */}
                 <div
-                    className="inline-flex items-center justify-center w-14 h-14 rounded-full mb-6"
-                    style={{ background: "#E6C76A" }}
-                >
-                    <Sparkles size={24} color="#0B2E6F" />
-                </div>
+                    className="absolute top-0 left-0 w-[40%] h-full pointer-events-none"
+                    style={{
+                        background: "radial-gradient(ellipse at left center, rgba(255,255,255,0.06) 0%, transparent 70%)",
+                    }}
+                />
+                {/* Blur near "Ready" - top left */}
+                <div
+                    className="absolute pointer-events-none"
+                    style={{
+                        width: "256.63px",
+                        height: "256.63px",
+                        top: "78.95px",
+                        left: "79.69px",
+                        background: "#E6C76A",
+                        filter: "blur(152.98px)",
+                        borderRadius: "16818472px",
+                        opacity: 0.55,
+                    }}
+                />
 
-                <AnimateOnScroll direction="right" delay={0.1}>
-                    {/* Heading */}
-                    <h2
-                        className="font-playfair text-white mb-5"
-                        style={{ fontSize: "60px", fontWeight: 500, lineHeight: "75px" }}
+                {/* Blur right side above stats */}
+                <div
+                    className="absolute pointer-events-none"
+                    style={{
+                        width: "382.44px",
+                        height: "382.44px",
+                        top: "400px",
+                        left: "990px",
+                        background: "#E6C76A",
+                        filter: "blur(152.98px)",
+                        borderRadius: "20050934px",
+                        opacity: 0.55,
+                    }}
+                />
+
+                <div className="relative z-10 max-w-[978px] text-center mx-auto">
+
+                    {/* Sparkle Icon */}
+                    <div
+                        className="inline-flex items-center justify-center w-14 h-14 rounded-full mb-6"
+                        style={{ background: "#E6C76A" }}
                     >
-                        Ready to Accelerate Your{" "}
-                        <span style={{ color: "#E6C76A" }}>Business Growth?</span>
-                    </h2>
+                        <Sparkles size={24} color="#0B2E6F" />
+                    </div>
 
-                    {/* Subtext */}
-                    <p
-                        className="font-inter text-white/90 mb-10 mx-auto"
-                        style={{ fontSize: "24px", fontWeight: 400, lineHeight: "39px", maxWidth: "768px" }}
-                    >
-                        Partner with Pingal Capital and unlock the right funding opportunities for your business. Let's turn your growth vision into reality.
-                    </p>
-                </AnimateOnScroll>
+                    <AnimateOnScroll direction="right" delay={0.1}>
+                        {/* Heading */}
+                        <h2
+                            className="font-playfair text-white mb-5 hero-heading"
+                            style={{ fontWeight: 500}}
+                        >
+                            Ready to Accelerate Your{" "}
+                            <span style={{ color: "#E6C76A" }}>Business Growth?</span>
+                        </h2>
 
-                <AnimateOnScroll direction="up" delay={0.1}>
-                {/* Buttons */}
-                <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-                    <button
-                        className="font-inter flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-opacity hover:opacity-90 cursor-pointer"
-                        onClick={()=> router.push("/contact")}
-                        style={{
-                            background: "linear-gradient(135deg, #D4A437 0%, #E6C76A 100%)",
-                            color: "#0B2E6F",
-                            fontSize: "15px",
-                            fontWeight: 600,
-                        }}
-                    >
-                        Get Started
-                        <ArrowRight size={16} />
-                    </button>
-                    <button
-                        className="font-inter px-6 py-3 rounded-full font-semibold border-2 text-white transition-colors hover:bg-white hover:text-[#0B2E6F] cursor-pointer"
-                        onClick={()=> router.push("/contact")}
-                        style={{
-                            borderColor: "rgba(255,255,255,0.6)",
-                            fontSize: "15px",
-                            fontWeight: 600,
-                        }}
-                    >
-                        Schedule Consultation
-                    </button>
-                </div>
-                </AnimateOnScroll>
+                        {/* Subtext */}
+                        <p
+                            className="font-inter text-white/90 mb-10 mx-auto hero-para"
+                            style={{ fontWeight: 400, maxWidth: "768px" }}
+                        >
+                            Partner with Pingal Capital and unlock the right funding opportunities for your business. Let's turn your growth vision into reality.
+                        </p>
+                    </AnimateOnScroll>
 
-                {/* Divider */}
-                <hr style={{ borderColor: "rgba(255,255,255,0.15)", marginBottom: "40px" }} />
-
-                <AnimateOnScroll direction="up" delay={0.1}>
-                {/* Stats */}
-                <div className="flex flex-wrap justify-center gap-12">
-                    {stats.map((stat, index) => (
-                        <div key={index} className="text-center">
-                            <div
-                                className="font-playfair"
-                                style={{ color: "#E6C76A", fontSize: "36px", fontWeight: 600, lineHeight: "44px" }}
+                    <AnimateOnScroll direction="up" delay={0.1}>
+                        {/* Buttons */}
+                        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+                            <button
+                                className="font-inter flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-opacity hover:opacity-90 cursor-pointer"
+                                onClick={() => router.push("/contact")}
+                                style={{
+                                    background: "linear-gradient(135deg, #D4A437 0%, #E6C76A 100%)",
+                                    color: "#0B2E6F",
+                                    fontSize: "15px",
+                                    fontWeight: 600,
+                                }}
                             >
-                                {stat.value}
-                            </div>
-                            <div
-                                className="font-inter text-blue-200 mt-1"
-                                style={{ fontSize: "72px", fontWeight: 500, lineHeight: "90px", fontSize: "13px", lineHeight: "20px" }}
+                                Get Started
+                                <ArrowRight size={16} />
+                            </button>
+                            <button
+                                className="font-inter px-6 py-3 rounded-full font-semibold border-2 text-white transition-colors hover:bg-white hover:text-[#0B2E6F] cursor-pointer"
+                                onClick={() => router.push("/contact")}
+                                style={{
+                                    borderColor: "rgba(255,255,255,0.6)",
+                                    fontSize: "15px",
+                                    fontWeight: 600,
+                                }}
                             >
-                                {stat.label}
-                            </div>
+                                Schedule Consultation
+                            </button>
                         </div>
-                    ))}
+                    </AnimateOnScroll>
+
+                    {/* Divider */}
+                    <hr style={{ borderColor: "rgba(255,255,255,0.15)", marginBottom: "40px" }} />
+
+                    <AnimateOnScroll direction="up" delay={0.1}>
+                        {/* Stats */}
+                        <div className="flex flex-wrap justify-center gap-12">
+                            {stats.map((stat, index) => (
+                                <div key={index} className="text-center">
+                                    <div
+                                        className="font-playfair"
+                                        style={{ color: "#E6C76A", fontSize: "36px", fontWeight: 600, lineHeight: "44px" }}
+                                    >
+                                        {stat.value}
+                                    </div>
+                                    <div
+                                        className="font-inter text-blue-200 mt-1"
+                                        style={{ fontSize: "72px", fontWeight: 500, lineHeight: "90px", fontSize: "13px", lineHeight: "20px" }}
+                                    >
+                                        {stat.label}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </AnimateOnScroll>
+
                 </div>
-                </AnimateOnScroll>
 
-            </div>
+                {/* Bottom wave divider */}
+                <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+                    <svg
+                        viewBox="0 0 1440 80"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        className="w-full h-[80px]"
+                    >
+                        <path
+                            d="M0,40 C360,90 1080,0 1440,50 L1440,80 L0,80 Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
 
-            {/* Bottom wave divider */}
-            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-                <svg
-                    viewBox="0 0 1440 80"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    className="w-full h-[80px]"
-                >
-                    <path
-                        d="M0,40 C360,90 1080,0 1440,50 L1440,80 L0,80 Z"
-                        fill="white"
-                    />
-                </svg>
-            </div>
-
-        </section>
+            </section>
+        </>
     );
 }

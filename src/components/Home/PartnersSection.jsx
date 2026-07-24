@@ -3,14 +3,21 @@ import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const partners = [
-    { name: "Bank of Baroda", src: "/partners/BOB.png" },
-    { name: "IDBI Bank", src: "/partners/IDBI.png" },
-    { name: "Deutsche Bank", src: "/partners/Deutsche.png" },
-    { name: "Canara Bank", src: "/partners/Canara.png" },
-    { name: "Tata Capital", src: "/partners/TataCap.png" },
-    { name: "Chola", src: "/partners/Chola.png" },
-    { name: "Hinduja Housing Finance", src: "/partners/HindujaFin.png" },
-    { name: "Aditya Birla Group", src: "/partners/AdityaBirla.png" },
+    { name: "County Group", url: '/partners/financial/County-Group.jpeg' },
+    { name: "Godrej Properties", url: '/partners/financial/Godrej-Properties-Logo.webp' },
+    { name: "ACE Group", url: '/partners/financial/ACE-Group.jpeg' },
+    { name: "M3M", url: '/partners/financial/M3M.jpeg' },
+    { name: "DLF Groups", url: '/partners/financial/DLF.webp' },
+    { name: "Experion", url: '/partners/financial/Experion.jpeg' },
+    { name: "Gaur Group", url: '/partners/financial/Gaur-Group.webp' },
+    { name: "Prestige Group", url: '/partners/financial/Prestige.webp' },
+    { name: "Indian Bank", url: '/partners/banking/Indian-Bank.jpeg' },
+    { name: "Indian Overseas Bank", url: '/partners/banking/Indian-Overseas-Bank.jpeg' },
+    { name: "Punjab National Bank", url: '/partners/banking/Punjab-National-Bank.jpeg' },
+    { name: "SBI Bank", url: '/partners/banking/SBI-Bank.jpeg' },
+    { name: "TATA Capital", url: '/partners/banking/TATA-Capital.jpeg' },
+    { name: "ICICI Bank", url: '/partners/banking/ICICI-Bank.jpeg' },
+    { name: "Axis Bank", url: '/partners/banking/Axis-Bank.jpeg' },
 ];
 
 function getVisibleCount() {
@@ -60,13 +67,21 @@ export default function PartnersSection() {
         return () => clearInterval(autoPlayRef.current);
     }, [animating]);
 
-    const visiblePartners = Array.from({ length: visibleCount }, (_, i) => partners[(current + i) % total]);
+    // Stable identity: use partner.name as key, not position index
+    const visiblePartners = Array.from({ length: visibleCount }, (_, i) =>
+        partners[(current + i) % total]
+    );
 
     return (
         <section className="bg-white py-16 px-6">
-            <div className="max-w-full">
+            {/* Hidden preload: all images fetched once on mount, cached by browser */}
+            <div style={{ display: 'none' }} aria-hidden="true">
+                {partners.map((p) => (
+                    <img key={p.name} src={p.url} alt="" />
+                ))}
+            </div>
 
-                {/* Heading */}
+            <div className="max-w-full">
                 <h2
                     className="font-playfair text-center mb-12"
                     style={{ fontSize: "clamp(32px, 4vw, 60px)", fontWeight: 500, lineHeight: "1.2" }}
@@ -75,10 +90,7 @@ export default function PartnersSection() {
                     <span style={{ color: "#D4A437" }}>Partners</span>
                 </h2>
 
-                {/* Carousel */}
                 <div className="flex items-center gap-4">
-
-                    {/* Left Arrow */}
                     <button
                         onClick={prev}
                         className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 hover:bg-gray-50 transition-colors"
@@ -87,37 +99,31 @@ export default function PartnersSection() {
                         <ChevronLeft size={18} color="#0B2E6F" />
                     </button>
 
-                    {/* Logos */}
                     <div className="flex-1 overflow-hidden">
                         <div
                             className="flex items-center justify-center gap-4 sm:gap-8"
                             style={{
                                 opacity: animating ? 0 : 1,
                                 transform: animating
-                                    ? direction === "right"
-                                        ? "translateX(20px)"
-                                        : "translateX(-20px)"
+                                    ? direction === "right" ? "translateX(20px)" : "translateX(-20px)"
                                     : "translateX(0)",
                                 transition: "opacity 0.35s ease, transform 0.35s ease",
                             }}
                         >
                             {visiblePartners.map((partner, index) => (
                                 <div
-                                    key={`${partner.name}-${index}`}
+                                    key={partner.name}
                                     className="flex items-center justify-center px-3 sm:px-6 py-3"
                                     style={{
                                         borderRight: index < visibleCount - 1 ? "1px solid #f0f0f0" : "none",
                                         flex: 1,
                                     }}
                                 >
-                                    <div
-                                        className="flex items-center justify-center w-full"
-                                        style={{ height: "60px" }}
-                                    >
+                                    <div className="flex items-center justify-center w-full" style={{ height: "150px" }}>
                                         <img
-                                            src={partner.src}
+                                            src={partner.url}
                                             alt={partner.name}
-                                            style={{ maxHeight: "60px", maxWidth: "100%", objectFit: "contain" }}
+                                            style={{ maxHeight: "150px", maxWidth: "100%", objectFit: "contain" }}
                                         />
                                     </div>
                                 </div>
@@ -125,7 +131,6 @@ export default function PartnersSection() {
                         </div>
                     </div>
 
-                    {/* Right Arrow */}
                     <button
                         onClick={next}
                         className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 hover:bg-gray-50 transition-colors"
@@ -133,9 +138,7 @@ export default function PartnersSection() {
                     >
                         <ChevronRight size={18} color="#0B2E6F" />
                     </button>
-
                 </div>
-
             </div>
         </section>
     );

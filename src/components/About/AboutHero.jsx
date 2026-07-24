@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/components/Navbar";
 import AnimateOnScroll from "../AnimateOnScroll";
 
@@ -5,16 +6,16 @@ export default function AboutHero() {
   return (
     <>
       {/* ── NAVBAR ── */}
-      <div className="bg-[#0B2E6F] z-10">
+      <div className="bg-[#0B2E6F] z-50 relative">
         <AnimateOnScroll direction="right" delay={0.05}>
           <Navbar />
         </AnimateOnScroll>
       </div>
+
       <div
-        className="relative min-h-[320px] overflow-hidden bg-[#0B2E6F]"
+        className="relative min-h-[320px] bg-[#0B2E6F]"
         style={{ background: "linear-gradient(to bottom right, #0B2E6F 50%, #D4A437 100%)" }}
       >
-
         <AnimateOnScroll direction="right" delay={0.1}>
           {/* Content */}
           <div className="relative z-10 px-16 pt-20 pb-16 max-w-6xl mx-auto">
@@ -52,18 +53,6 @@ export default function AboutHero() {
 
           </div>
         </AnimateOnScroll>
-
-        {/* Bottom wave
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          viewBox="0 0 1440 80"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          className="w-full h-[80px]"
-        >
-          <path d="M0,40 C360,90 1080,0 1440,50 L1440,80 L0,80 Z" fill="white" />
-        </svg>
-      </div> */}
       </div>
     </>
   );

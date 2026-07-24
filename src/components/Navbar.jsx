@@ -27,7 +27,7 @@ export default function Navbar() {
     const router = useRouter();
 
     return (
-        <div className="relative z-20 w-full px-4 sm:px-8 lg:px-16 pt-6 sm:pt-10">
+        <div className="relative z-50 w-full px-4 sm:px-8 lg:px-16 pt-6 sm:pt-10">
             <nav
                 className="flex items-center justify-between px-4 sm:px-6 py-10 rounded-full w-full mx-auto"
                 style={{
@@ -120,9 +120,6 @@ export default function Navbar() {
                     {[
                         { label: "Home", href: "/" },
                         { label: "About us", href: "/about" },
-                        { label: "Our Partners", href: "/our-partners" },
-                        { label: "Career", href: "/career" },
-                        { label: "Join as a Partner", href: "/join-us" },
                     ].map((item) => (
                         <Link
                             key={item.label}
@@ -135,7 +132,7 @@ export default function Navbar() {
                         </Link>
                     ))}
 
-                    {/* Mobile Services */}
+                    {/* Mobile Services — now after About us */}
                     <div>
                         <button
                             onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
@@ -166,6 +163,22 @@ export default function Navbar() {
                             </div>
                         )}
                     </div>
+
+                    {[
+                        { label: "Our Partners", href: "/our-partners" },
+                        { label: "Career", href: "/career" },
+                        { label: "Join as a Partner", href: "/join-us" },
+                    ].map((item) => (
+                        <Link
+                            key={item.label}
+                            href={item.href}
+                            className="block py-2.5 px-3 font-inter text-sm font-medium rounded-lg hover:bg-gray-100 transition-colors"
+                            style={{ color: "#1a2472" }}
+                            onClick={() => setMobileOpen(false)}
+                        >
+                            {item.label}
+                        </Link>
+                    ))}
 
                     <button
                         onClick={() => { router.push("/contact"); setMobileOpen(false); }}
