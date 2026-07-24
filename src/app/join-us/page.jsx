@@ -18,7 +18,7 @@ export default function JoinUs() {
         position: "",
         message: "",
     });
-    const [loading,setLoading] = useState(false)
+    const [loading, setLoading] = useState(false)
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState("")
 
@@ -38,6 +38,14 @@ export default function JoinUs() {
                 body: JSON.stringify({ form_slug: "join-us", data: form }),
             });
             if (res.ok) {
+                await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        formType: 'Partner Registration Form - Join Us Page',
+                        data: form,
+                    }),
+                });
                 setSubmitted(true);
                 setForm({ name: "", email: "", phone: "", position: "", message: "" });
             } else {

@@ -33,10 +33,16 @@ export default function ContactPage() {
                 body: JSON.stringify({ form_slug: "contact", data: form }),
             });
             if (res.ok) {
+                await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        formType: 'Contact Page Form - General Enquiry',
+                        data: form,
+                    }),
+                });
                 setSubmitted(true);
                 setForm({ fullName: "", email: "", phone: "", subject: "", message: "" });
-            } else {
-                setError("Something went wrong. Please try again.");
             }
         } catch {
             setError("Network error. Please try again.");

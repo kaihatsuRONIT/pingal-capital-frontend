@@ -19,8 +19,8 @@ export default function Careers() {
         message: "",
     });
     const [submitted, setSubmitted] = useState(false);
-    const [loading,setLoading] = useState(false)
-    const [error,setError] = useState("")
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState("")
 
     const handle = (e) => {
         const { name, value, files } = e.target;
@@ -38,6 +38,14 @@ export default function Careers() {
                 body: JSON.stringify({ form_slug: "career", data: { name: form.name, email: form.email, phone: form.phone, position: form.position, message: form.message } }),
             });
             if (res.ok) {
+                await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        formType: 'Career Page Form - Job Application',
+                        data: { name: form.name, email: form.email, phone: form.phone, position: form.position, message: form.message },
+                    }),
+                });
                 setSubmitted(true);
                 setForm({ name: "", email: "", phone: "", position: "", message: "", resume: null });
             } else {
